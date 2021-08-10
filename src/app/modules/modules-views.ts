@@ -4,10 +4,10 @@ import { FormsModule } from "@angular/forms";
 
 import { MatCardModule } from '@angular/material/card';
 
-import { ModulesComponents } from '../modules/modules-components'
+import { ModulesComponents } from '../modules/modules-components';
 
 import { HomeComponent } from "../views/home/home.component";
-import { DetailsComponent } from "../views/details/details.component"
+import { DetailsComponent } from "../views/details/details.component";
 
 @NgModule({
     declarations: [
@@ -18,7 +18,7 @@ import { DetailsComponent } from "../views/details/details.component"
         CommonModule,
         FormsModule,
         MatCardModule,
-        ModulesComponents
+        ModulesComponents,
     ],
     exports: [
         HomeComponent,
