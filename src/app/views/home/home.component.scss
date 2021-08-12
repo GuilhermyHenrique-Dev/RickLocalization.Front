@@ -110,9 +110,29 @@ button::before {
 }
 
 .dashboard-selector {
-    background-image: url('../../../assets/dashboar_fundo.jpg');
+    background-image: url('../../../assets/fundo02jpg.jpg');
     background-position: unset;
     background-size: contain;
+}
+
+.title-body {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.sub-title {
+    color: #41e4e4;
+    font-family: cursive;
+    font-size: xx-large;
+    text-shadow: 0 0 0.3em #8F7;
+}
+
+.title-sistem {
+    color: #f3f7f7;
+    font-family: cursive;
+    font-size: x-large;
+    text-shadow: 0 0 0.3em rgb(7, 117, 31);
 }
 
 .container {
@@ -128,7 +148,7 @@ button::before {
         flex-wrap: wrap;
     width: 80vw;
     height: 100vh;
-    margin-left: 6vw;
+    margin-left: 10vw;
     /* transform:rotateX(7deg) rotateZ(-4deg) rotateY(13deg) scale3d(1, 1, -0.9); */
     -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
             transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);

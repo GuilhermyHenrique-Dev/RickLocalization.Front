@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       setTimeout(() => {
         this.router.navigate([page])
         this.scanner = false
-      },5000)
+      },6000)
     } else {
       this.router.navigate([page])
     }

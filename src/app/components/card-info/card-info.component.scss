@@ -1,5 +1,8 @@
-.container-card {
-    margin: 20px;
+.title {
+    color: #41e4e4;
+    font-family: cursive;
+    font-size: xx-large;
+    text-shadow: 0 0 0.3em #8F7;
 }
 .title-container {
     margin: 20px 0;
@@ -8,6 +11,21 @@
     margin: 25px 0;
 }
 .content-card {
-    height: 150px;
+    width: 300px;
+    height: 200px;
     padding: 15px;
+    // margin-bottom: 40px;
+    cursor: pointer;
+}
+.content-card:hover {
+    box-shadow: 2px 4px 9px 6px rgb(53 253 225 / 34%), 0px 0px 1px 0px rgb(47 232 241 / 33%), 0px 1px 3px 0px rgb(88 218 247 / 44%);
+}
+.img-card {
+    height: 165px;
+}
+.content-label {
+    margin: -5px;
+    span {
+        font-weight: 500;
+    }
 }

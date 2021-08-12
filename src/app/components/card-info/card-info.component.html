@@ -1,8 +1,10 @@
-<mat-card class="container-card">
-    <mat-card-title class="title-container">Registros de Rick`s e Morty`s</mat-card-title>
-    <div class="row">
-        <div class="col-4 body-card" *ngFor="let item of dataInfo">
-            <mat-card class="content-card" (click)="goTo(item.id)">{{item.data}}</mat-card>
-        </div>
+<div class="row">
+    <div class="col-3 body-card" *ngFor="let item of dataInfo">
+        <mat-card class="content-card" (click)="goTo(item.id)">
+            <img class="img-card" mat-card-image src="{{item.url}}" alt="">
+            <mat-card-content class="content-label">
+                <span>Dimensão: </span><B>{{item.dimensao}}</B>
+            </mat-card-content>
+        </mat-card>
     </div>
-</mat-card>
+</div>
