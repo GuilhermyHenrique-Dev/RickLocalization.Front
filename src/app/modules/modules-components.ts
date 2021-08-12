@@ -5,10 +5,12 @@ import { FormsModule } from "@angular/forms";
 import { MatCardModule } from '@angular/material/card';
 
 import { CardInfoComponent } from "../components/card-info/card-info.component";
+import { ScannerComponent } from "../components/scanner/scanner.component";
 
 @NgModule({
     declarations: [
-        CardInfoComponent
+        CardInfoComponent,
+        ScannerComponent
     ],
     imports: [
         CommonModule,
@@ -16,7 +18,8 @@ import { CardInfoComponent } from "../components/card-info/card-info.component";
         MatCardModule,
     ],
     exports: [
-        CardInfoComponent
+        CardInfoComponent,
+        ScannerComponent
     ]
 })
 

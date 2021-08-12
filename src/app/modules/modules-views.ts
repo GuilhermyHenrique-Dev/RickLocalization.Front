@@ -7,12 +7,17 @@ import { MatCardModule } from '@angular/material/card';
 import { ModulesComponents } from '../modules/modules-components';
 
 import { HomeComponent } from "../views/home/home.component";
+import { DashboardComponent } from "../views/dashboard/dashboard.component";
 import { DetailsComponent } from "../views/details/details.component";
+import { NavigationHistoryComponent } from "../views/navigation-history/navigation-history.component";
+
 
 @NgModule({
     declarations: [
         HomeComponent,
-        DetailsComponent
+        DashboardComponent,
+        DetailsComponent,
+        NavigationHistoryComponent
     ],
     imports: [
         CommonModule,
@@ -22,7 +27,9 @@ import { DetailsComponent } from "../views/details/details.component";
     ],
     exports: [
         HomeComponent,
-        DetailsComponent
+        DashboardComponent,
+        DetailsComponent,
+        NavigationHistoryComponent
     ]
 })
 

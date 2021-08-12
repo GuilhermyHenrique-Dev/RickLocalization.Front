@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  scanner: boolean = false
 
   constructor(
     private router: Router
@@ -15,7 +16,15 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // goTo(_page) {
-  //   this.router.navigate([_page])
-  // }
+  goTo(page: string) {
+    if (page == '/dashboard') {
+      this.scanner = true 
+      setTimeout(() => {
+        this.router.navigate([page])
+        this.scanner = false
+      },5000)
+    } else {
+      this.router.navigate([page])
+    }
+  }
 }
